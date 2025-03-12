@@ -116,6 +116,9 @@ hr {
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .botao {
@@ -129,11 +132,20 @@ hr {
     font-size: 1rem;
     line-height: 150%;
 }
+.botoes-primary {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 
 #btnLimpar {
     background-color: var(--cor-base-branca);
     border: 1px solid var(--cor-roxo-escuro);
     color: var(--cor-roxo-escuro);
+}
+
+#btnProximaPagina {
+    border-radius: 10rem;
 }
 
 .botao:hover, #btnLimpar:hover{

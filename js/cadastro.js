@@ -279,6 +279,7 @@ let emailInput = $('#email');
 let telefoneInput = $('#telefone');
 let botaoAdicionar = $('#btnAdicionar');
 let botaoLimpar = $('#btnLimpar');
+let botaoProximaPagina = $('#btnProximaPagina');
 
 // validacoes
 let validNome, validEmail, validTelefone = false;
@@ -387,4 +388,9 @@ botaoLimpar.addEventListener('click', () => {
     validNome = false;
     validEmail = false;
     validTelefone = false;
+});
+
+// botao proxima pagina
+botaoProximaPagina.addEventListener('click', () => {
+    window.location.href = "./listacontatos.html";
 });

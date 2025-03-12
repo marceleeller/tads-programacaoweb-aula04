@@ -1,0 +1,15 @@
+function loadData() {
+    const userData = JSON.parse(localStorage.getItem('user'));
+    if (userData) {
+        const table = document.getElementById('dataTable');
+        const row = table.insertRow();
+        row.insertCell(0).textContent = userData.name;
+        row.insertCell(1).textContent = userData.email;
+        row.insertCell(2).textContent = userData.phone;
+        row.insertCell(3).textContent = userData.age;
+    } else {
+        alert("Nenhum dado encontrado no LocalStorage!");
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadData);

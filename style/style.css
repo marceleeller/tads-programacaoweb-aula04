@@ -1,0 +1,143 @@
+:root {
+    --cor-base-branca: #ffffff;
+    --cor-base-cinza-100: #e1e1e6;
+    --cor-base-cinza-200: #8d8d99;
+    --cor-base-cinza-300: #7c7c8a;
+    --cor-base-cinza-400: #323238;
+    --cor-roxo-escuro: #633bbc;
+    --cor-roxo-claro: #8257e5;
+    --cor-sucesso: #1d8841;
+}
+
+* {
+    font-family: "IBM Plex Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--cor-base-branca);
+    color:var(--cor-base-cinza-400);
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--cor-base-cinza-100); /* Define a cor da linha */
+}
+
+.container {
+    max-width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid var(--cor-base-cinza-100);
+    border-radius: .3rem;
+    padding: 1.5rem;
+    max-width: 50vw;
+    width: 100%;
+}
+
+.header-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.icone {
+    background-color: var(--cor-roxo-escuro);
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    border-radius: 10rem;
+    margin-right: .5rem;
+}
+
+.icone img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: .5rem;
+}
+
+.form {
+    padding-top: 1rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-item label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.form-item input {
+    padding: 0.7rem;
+    border: 1px solid var(--cor-base-cinza-100);
+    border-radius: 0.2rem;
+}
+.form-item input:focus {
+    border: 1px solid var(--cor-roxo-escuro);
+    outline: none;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-item label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.footer-botoes {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    background-color: var(--cor-roxo-escuro);
+    color: var(--cor-base-branca);
+    border: none;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+#btnLimpar {
+    background-color: var(--cor-base-branca);
+    border: 1px solid var(--cor-roxo-escuro);
+    color: var(--cor-roxo-escuro);
+}
+
+.botao:hover, #btnLimpar:hover{
+    background-color: var(--cor-roxo-claro);
+    color: var(--cor-base-branca);
+    transition: ease-in-out .1s;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contatos</title>
+
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/toast.css">
+
+    <!-- JS -->
+    <script src="./js/cadastro.js" defer></script>
+</head>
+<body>
+    
+<div class="container">
+    <div class="card">
+        <div class="header-titulo">
+            <div class="titulo" id="novoContato">
+                <div class="icone">
+                    <img src="./assets/contato.svg" alt="icone do contato">
+                </div>
+                <h1 class>Novo contato</h1>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <div class="form">
+            <div class="form-item">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Como prefere ser chamado">
+            </div>
+            <div class="form-item">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu número de WhatsApp">
+            </div>
+            <div class="form-item">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+    
+        <div class="footer-botoes">
+            <button id="btnLimpar" class="botao">LIMPAR</button>
+            <button id="btnAdicionar" class="botao">ADICIONAR</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+
+    <!-- Links para Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/page2.css">
+
+    <!-- JS -->
+    <script src="js/listacontatos.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="header-titulo">
+            <div class="titulo">
+                <div class="icone">
+                    <img src="./assets/contato.svg" alt="Ícone de contato">
+                </div>
+                <h1>Lista de Contatos</h1>
+            </div>
+        </div>
+
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable">
+                <!-- Os dados do LocalStorage serão inseridos aqui -->
+            </tbody>
+        </table>
+
+        <div class="footer-botoes">
+            <a href="index.html" class="botao">Voltar</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
